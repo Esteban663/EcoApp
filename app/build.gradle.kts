@@ -36,25 +36,20 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.play.services.maps)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
 
-    //Dependencias osmdroid
+    // Dependencias osmdroid
     implementation("org.osmdroid:osmdroid-android:6.1.14")
     implementation("org.osmdroid:osmdroid-wms:6.1.14")
 
-    // ... otras dependencias
-    implementation("com.google.android.gms:play-services-base:18.4.0") // O la última versión
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    // ... resto de tus dependencias
+    // ... otras dependencias (las que ya tienes)
+    implementation("com.google.android.gms:play-services-base:18.4.0")
 
-
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
 }
