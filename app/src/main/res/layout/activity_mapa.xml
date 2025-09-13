@@ -8,7 +8,7 @@
     android:background="@drawable/fondo"
     tools:context=".Mapa">
 
-    <com.google.android.gms.maps.MapView
+    <org.osmdroid.views.MapView
         android:id="@+id/mapView"
         android:layout_width="318dp"
         android:layout_height="263dp"
