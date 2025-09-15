@@ -59,7 +59,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         insertRecyclingPoint(db, "CREA Anserma", "Cra. 4 #15-21, Anserma, Caldas", 5.234646, -75.785943);
     }
 
-    private void insertRecyclingPoint(SQLiteDatabase db, String name, String address, double latitude, double longitude) {
+    public void insertRecyclingPoint(SQLiteDatabase db, String name, String address, double latitude, double longitude) {
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, name);
         values.put(COLUMN_ADDRESS, address);
@@ -90,5 +90,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         cursor.close();
         return points;
+    }
+    
+    public RecyclingPoint getRecyclingPointByName(SQLiteDatabase db, String nombre) {
+        RecyclingPoint punto = null;
+        
+        Cursor cursor = db.rawQuery(
+                "SELECT * FROM " + TABLE_RECYCLING_POINTS + " WHERE " + COLUMN_NAME + " = ?",
+                new String[]{nombre}
+        );
+        if (cursor.moveToFirst()) {
+            int id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID));
+            String nombre_punto = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME));
+            String direccion = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_ADDRESS));
+            double latitud = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LATITUDE));
+            double longitud = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LONGITUDE));
+            
+            // Ahora pasamos TODOS los datos correctos
+            punto = new RecyclingPoint(id, nombre_punto, direccion, latitud, longitud);
+        }
+        
+        cursor.close();
+        return punto;
     }
 }

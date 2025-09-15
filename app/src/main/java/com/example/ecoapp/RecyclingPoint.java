@@ -35,4 +35,11 @@ public class RecyclingPoint {
     public double getLongitude() {
         return longitude;
     }
+    
+    
+    @Override
+    public String toString()
+        {
+            return "Nombre: " + name + "\nDireccion: " + address +"\n";
+        }
 }
