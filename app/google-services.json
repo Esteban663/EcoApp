@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "531400089082",
+    "project_id": "ecoapp-anserma",
+    "storage_bucket": "ecoapp-anserma.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531400089082:android:26d7804bba678dd873d843",
+        "android_client_info": {
+          "package_name": "com.ecoapp.anserma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADqonXJd9XnWQu8Lflov9Irafn9f_Q2LM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531400089082:android:ab0df3dc1f2f156773d843",
+        "android_client_info": {
+          "package_name": "com.example.ecoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADqonXJd9XnWQu8Lflov9Irafn9f_Q2LM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

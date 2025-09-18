@@ -16,9 +16,9 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="160dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="48dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -26,34 +26,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-                android:id="@+id/txtTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="EcoApp"
-                android:textColor="@android:color/holo_green_dark"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+        android:id="@+id/txtTitle"
+        android:layout_width="153dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="EcoApp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
 
             <!-- Subtítulo -->
-            <TextView
-                android:id="@+id/txtSubtitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="App para encontrar puntos de reciclaje\nen ANSERMA"
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:lineSpacingExtra="2dp"
-                android:textColor="#203A23"
-                app:layout_constraintTop_toBottomOf="@id/txtTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="14dp"
-                android:paddingHorizontal="6dp"/>
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:lineSpacingExtra="2dp"
+        android:paddingHorizontal="6dp"
+        android:text="App para encontrar puntos de reciclaje\nen ANSERMA"
+        android:textAlignment="center"
+        android:textColor="#203A23"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
 
             <!-- Botón Mapa -->
             <Button
