@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.ecoapp.R;
+
 public class MainActivity extends AppCompatActivity
     {
         private Button btnMapa, btnConsejos;
@@ -33,12 +35,16 @@ public class MainActivity extends AppCompatActivity
                         Intent intent = new Intent(MainActivity.this, Mapa.class);
                         startActivity(intent);
                     }
+
+
                 });
-               
-
+                // Agregar este listener para el botón de Consejos
+                btnConsejos.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, ConsejosActivity.class);
+                        startActivity(intent);
+                    }
+                    });
             }
-
-
-
-
     }

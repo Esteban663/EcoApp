@@ -19,6 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EcoApp">
+
+        <!-- Activity de Consejos (Firebase) -->
+        <activity
+            android:name=".ConsejosActivity"
+            android:exported="false" />
+
         <activity
             android:name=".Puntos_Reciclaje"
             android:exported="false" />
@@ -30,7 +36,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
